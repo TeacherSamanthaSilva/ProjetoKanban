@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Kanban</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Kanban</h1>
+    <form  id="add-tasks">
+        <p>Crie uma nova Tarefa: </p>
+        <input type="text" placeholder="Digite a próxima Tarefa...">
+        <button type="submit">Criar Tarefa</button>
+    </form>
+    <div class="kanban">
+        <div class="column">
+            <h2>Para Fazer</h2>
+            <ul class="tasks" id="todo">
+                <li draggable="true">Tarafa 1</li>
+                <li draggable="true">Tarafa 2</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Fazendo</h2>
+            <ul class="tasks" id="doing">
+                <li draggable="true">Tarafa 3</li>
+                <li draggable="true">Tarafa 4</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Feito</h2>
+            <ul class="tasks" id="done">
+                <li draggable="true">Tarafa 5</li>
+                <li draggable="true">Tarafa 6</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
