@@ -6,34 +6,37 @@
     <title>Projeto Kanban</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Kanban</h1>
-    <form  id="add-tasks">
-        <p>Crie uma nova Tarefa: </p>
+    <h1 class="roboto-black">Kanban</h1>
+    <form  id="add-tasks" class="roboto-light">
+        <p class="roboto-thin">Crie uma nova Tarefa: </p>
         <input type="text" placeholder="Digite a próxima Tarefa...">
         <button type="submit">Criar Tarefa</button>
     </form>
-    <div class="kanban">
-        <div class="column">
-            <h2>Para Fazer</h2>
+    <div class="kanban roboto-regular">
+        <div class="column roboto-medium">
+            <h2 class="roboto-bold">Para Fazer</h2>
             <ul class="tasks" id="todo">
-                <li draggable="true">Tarafa 1</li>
-                <li draggable="true">Tarafa 2</li>
+                <li draggable="true">Tarefa 1</li>
+                <li draggable="true">Tarefa 2</li>
             </ul>
         </div>
-        <div class="column">
-            <h2>Fazendo</h2>
+        <div class="column roboto-regular">
+            <h2 class="roboto-bold">Fazendo</h2>
             <ul class="tasks" id="doing">
-                <li draggable="true">Tarafa 3</li>
-                <li draggable="true">Tarafa 4</li>
+                <li draggable="true">Tarefa 3</li>
+                <li draggable="true">Tarefa 4</li>
             </ul>
         </div>
-        <div class="column">
-            <h2>Feito</h2>
+        <div class="column roboto-regular">
+            <h2 class="roboto-bold">Feito</h2>
             <ul class="tasks" id="done">
-                <li draggable="true">Tarafa 5</li>
-                <li draggable="true">Tarafa 6</li>
+                <li draggable="true">Tarefa 5</li>
+                <li draggable="true">Tarefa 6</li>
             </ul>
         </div>
     </div>
